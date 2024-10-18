@@ -10,13 +10,25 @@ img {
     max-width: 100%;
 }
 
+.container{
+    width: 80%;
+    margin: auto;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.col-4{
+    width: calc(100% / 12 * 4);
+}
+
 .debug {
     border: 2px dashed black;
 }
 
 /* #endregion Utilities */
-
-
 
 /* #region Header */
 header {
@@ -29,5 +41,27 @@ header {
     font-style: italic;
     text-align: center;
 }
-
 /* #endregion Header */
+
+/* #region Main */
+
+
+
+.card{
+    padding: 1rem;
+}
+
+.cardImage{
+    width: 600px;
+    aspect-ratio: 1;
+}
+
+.cardText{
+    margin-top: 0.75rem;
+    font-family: "Edu TAS Beginner", cursive;
+    font-size: 1.25rem;
+}
+
+
+/* #endregion Main */
+
