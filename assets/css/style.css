@@ -1,5 +1,4 @@
 /* #region Utilities */
-
 * {
     margin: 0;
     padding: 0;
@@ -22,13 +21,16 @@ img {
 .row{
     display: flex;
     flex-wrap: wrap;
-    padding: 3rem 2rem;
+    justify-content: center;
+    padding: 2rem;
 }
 
 .col-3{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    width: calc(100% / 12 * 3);
+    padding: 1rem;
+    background-color: white;
+    position: relative;
+    margin: 1.5rem;
 }
 /* #endregion Utilities */
 
@@ -36,7 +38,7 @@ img {
 header {
     background-image: url(../img/wall.png);
     padding: 2rem;
-    height: 120px;
+    /* height: 120px; */
     font-family: "Sometype Mono", monospace;
     font-size: 2rem;
     font-weight: lighter;
@@ -46,21 +48,11 @@ header {
 /* #endregion Header */
 
 /* #region Main */
-
 main{
     background-image: url(../img/cork.png);
 }
 
-.card{
-    width: calc(100% / 12 * 3);
-    padding: 1rem;
-    background-color: white;
-    position: relative;
-    margin: 0.75rem;
-    
-}
-
-.card:hover{
+.col-3:hover{
     rotate: 30deg;
     scale: 1.2;
 }
@@ -72,8 +64,7 @@ main{
 }
 
 .cardImage{
-    width: 600px;
-    aspect-ratio: 1;
+    width: 100%;
 }
 
 .cardText{
@@ -81,7 +72,7 @@ main{
     font-family: "Edu TAS Beginner", cursive;
     font-size: 1.25rem;
 }
-
-
 /* #endregion Main */
+
+
 
