@@ -1,6 +1,5 @@
 //console.log("Funzioni?");
 
-//let cardEl = document.querySelector(".row");
 let postEl = document.querySelector(".card");
 
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response => {
@@ -25,8 +24,5 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response 
 
 
 
-})//.catch(err => console.error(err));
-/* posts.forEach(post => {
-    console.log(posts.id);
-}) */
-//console.log(posts.title);
+}).catch(err => console.error(err));
+
