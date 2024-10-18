@@ -54,6 +54,7 @@ main{
     padding: 1rem;
     background-color: white;
     position: relative;
+    margin-bottom: 2rem;
 }
 
 .card:hover{

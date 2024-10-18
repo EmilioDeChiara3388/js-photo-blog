@@ -1,6 +1,6 @@
 //console.log("Funzioni?");
 
-let postEl = document.querySelector(".card");
+let postEl = document.querySelector(".col-4");
 
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response => {
     let posts = response.data;
@@ -10,14 +10,16 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response 
         let { title, thumbnailUrl } = post;
         console.log(post);
         postEl.innerHTML += `
-        <img src="./assets/img/pin.svg" alt="" class="cardPin">
-                        <img src=${thumbnailUrl} alt="" class="cardImage">
-                        <p class="cardText">${title}</p>
+            <div class="card">
+                <img src="./assets/img/pin.svg" alt="" class="cardPin">
+                <img src=${thumbnailUrl} alt="" class="cardImage">
+                <p class="cardText">${title}</p>
+            </div>
         `
     })
-    
 
-    
+
+
 
 
 
