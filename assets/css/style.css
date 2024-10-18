@@ -10,9 +10,9 @@ img {
     max-width: 100%;
 }
 
-/* .debug {
+.debug {
     border: 2px dashed black;
-} */
+}
 
 .container{
     width: 80%;
@@ -57,6 +57,11 @@ main{
     padding: 1rem;
     background-color: white;
     position: relative;
+}
+
+.card:hover{
+    rotate: 30deg;
+    scale: 1.2;
 }
 
 .cardPin{
