@@ -10,9 +10,9 @@ img {
     max-width: 100%;
 }
 
-.debug {
+/* .debug {
     border: 2px dashed black;
-}
+} */
 
 .container{
     width: 80%;
@@ -29,9 +29,6 @@ img {
     width: calc(100% / 12 * 4);
     padding: 1rem;
 }
-
-
-
 /* #endregion Utilities */
 
 /* #region Header */
