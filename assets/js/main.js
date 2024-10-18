@@ -1,6 +1,6 @@
 //console.log("Funzioni?");
 
-let postEl = document.querySelector(".col-4");
+let postEl = document.querySelector(".col-3");
 
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response => {
     let posts = response.data;
@@ -17,14 +17,5 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response 
             </div>
         `
     })
-
-
-
-
-
-
-
-
-
 }).catch(err => console.error(err));
 
