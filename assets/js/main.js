@@ -10,7 +10,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response 
         let { title, thumbnailUrl } = post;
         console.log(post);
         postEl.innerHTML += `
-            <div class="card">
+            <div class="card debug">
                 <img src="./assets/img/pin.svg" alt="" class="cardPin">
                 <img src=${thumbnailUrl} alt="" class="cardImage">
                 <p class="cardText">${title}</p>
