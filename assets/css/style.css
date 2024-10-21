@@ -55,6 +55,7 @@ main{
 .col-3:hover{
     rotate: 10deg;
     scale: 1.2;
+    box-shadow: 3px 3px 10px black;
 }
 
 .cardPin{
