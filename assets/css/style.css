@@ -79,7 +79,6 @@ main{
 
 /* #region Overlay */
 .overlay{
-    display: none;
     text-align: center;
     width: 100vw;
     background-color: rgba(33, 27, 27, 0.9);
@@ -88,6 +87,12 @@ main{
     position: fixed;
     top: 0;
 }
+
+.hiddenOverlay{
+    display: none;
+}
+
+
 
 .overlayPic{
     width: 450px;
