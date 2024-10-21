@@ -1,6 +1,7 @@
 //console.log("Funzioni?");
 
 let postEl = document.querySelector(".row");
+let cardImageEl = document.querySelectorAll(".cardImage");
 
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response => {
     let posts = response.data;
