@@ -20,7 +20,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response 
         //console.log(title);
 
         //Rendo maiuscole le iniziali di ogni parola del titolo:
-        const capitalizedTitle = title.split();
+        let capitalizedTitle = title.split(" ");
         for (let i = 0; i < capitalizedTitle.length; i++) {
             capitalizedTitle[i] = capitalizedTitle[i][0].toUpperCase() + capitalizedTitle[i].substr(1);
         }
