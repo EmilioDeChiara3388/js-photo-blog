@@ -112,3 +112,29 @@ button{
 }
 
 /* #endregion Overlay */
+
+/* #region Responsive */
+@media screen and (max-width: 850px){
+    .col-6-md{
+        width: 40%;
+        margin: 0.75rem;
+    }
+    .cardText{
+        margin-top: 0.5rem;
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .col-12-sm{
+        width: 90%;
+        margin: 0.75rem;
+        padding: 1.5rem;
+    }
+    .cardText{
+        margin-top: 0.5rem;
+        font-size: 1.5rem;
+    }
+}
+
+/* #endregion Responsive */

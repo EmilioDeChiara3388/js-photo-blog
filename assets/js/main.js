@@ -29,7 +29,7 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response 
 
         //Aggiungo dinamicamente gli oggetti in pagina:
         postEl.innerHTML += `
-            <div class="col-3 debug">
+            <div class="col-3 col-6-md col-12-sm debug">
                 <img src="./assets/img/pin.svg" alt="" class="cardPin">
                 <img src=${thumbnailUrl} alt="" class="cardImage">
                 <p class="cardText">${rightTitle}</p>
