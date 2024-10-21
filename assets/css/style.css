@@ -13,6 +13,7 @@ img {
     border: 2px dashed black;
 }
  */
+
 .container{
     width: 90%;
     margin: auto;
@@ -109,7 +110,5 @@ button{
     padding: 0.25rem;
     margin-bottom: 0.75rem;
 }
-
-
 
 /* #endregion Overlay */
