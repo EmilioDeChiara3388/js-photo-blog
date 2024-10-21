@@ -3,6 +3,7 @@
 let postEl = document.querySelector(".row");
 let overlayEl = document.querySelector(".overlay");
 let buttonEl = document.querySelector("button");
+let overlayImageEl = document.querySelector(".zoomedPic");
 //let overlayPicEl = document.querySelector(".overlayPic");
 
 
@@ -34,22 +35,13 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response 
         for (let i = 0; i < cardImageEl.length; i++) {
             cardImageEl[i].addEventListener("click", () => {
                 overlayEl.classList.remove("hiddenOverlay");
-                
-                
-                
-                cardImageEl.forEach(image => {
-                overlayPicEl.innerHTML = `<img src=${thumbnailUrl} alt="" class="zoomedPic">`
-                })
-                    
-                })
-                
-            }
-        
-        
-        /* overlayEl.addEventListener("click", () => {
-            overlayEl.classList.add("hiddenOverlay");
-        }) */
 
+                posts.forEach(element => {
+                    overlayImageEl.src = posts[i].thumbnailUrl;
+                })
+                
+            })
+        }
         buttonEl.addEventListener("click", () => {
             overlayEl.classList.add("hiddenOverlay");
         })
