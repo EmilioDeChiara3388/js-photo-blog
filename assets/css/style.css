@@ -53,7 +53,7 @@ main{
 }
 
 .col-3:hover{
-    rotate: 30deg;
+    rotate: 10deg;
     scale: 1.2;
 }
 
@@ -77,6 +77,7 @@ main{
 
 /* #region Overlay */
 .overlay{
+    /* display: none; */
     text-align: center;
     width: 100vw;
     background-color: rgba(33, 27, 27, 0.9);
@@ -87,9 +88,18 @@ main{
 }
 
 .overlayPic{
-    width: 600px;
+    width: 450px;
     aspect-ratio: 1;
-    margin-top: 3rem;
+}
+
+.closeButton{
+    text-align: center;
+    padding: 1rem;
+}
+
+button{
+    padding: 0.25rem;
+    margin-bottom: 0.75rem;
 }
 
 
