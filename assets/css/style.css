@@ -73,3 +73,25 @@ main{
     font-size: 1.25rem;
 }
 /* #endregion Main */
+
+
+/* #region Overlay */
+.overlay{
+    text-align: center;
+    width: 100vw;
+    background-color: rgba(33, 27, 27, 0.9);
+    height: 100vw;
+    z-index: 100;
+    position: fixed;
+    top: 0;
+}
+
+.overlayPic{
+    width: 600px;
+    aspect-ratio: 1;
+    margin-top: 3rem;
+}
+
+
+
+/* #endregion Overlay */
