@@ -3,7 +3,8 @@
 let postEl = document.querySelector(".row");
 let overlayEl = document.querySelector(".overlay");
 let buttonEl = document.querySelector("button");
-let cardImageEl = document.querySelector(".cardImage");
+
+
 
 axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response => {
     let posts = response.data;
@@ -20,10 +21,18 @@ axios.get("https://jsonplaceholder.typicode.com/photos?_limit=6").then(response 
                 <p class="cardText">${title}</p>
             </div>
         `
+        let cardImageEl = document.querySelectorAll(".cardImage");
+        console.log(cardImageEl);
+            
+        for (let i = 0; i < cardImageEl.length; i++) {
+            cardImageEl[i].addEventListener("click", () => {
+                overlayEl.classList.remove("hiddenOverlay");
+            })
+        }
         
-        overlayEl.addEventListener("click", () => {
+        /* overlayEl.addEventListener("click", () => {
             overlayEl.classList.add("hiddenOverlay");
-        })
+        }) */
 
         buttonEl.addEventListener("click", () => {
             overlayEl.classList.add("hiddenOverlay");
