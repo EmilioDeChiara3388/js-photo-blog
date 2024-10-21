@@ -76,7 +76,6 @@ main{
 }
 /* #endregion Main */
 
-
 /* #region Overlay */
 .overlay{
     text-align: center;
@@ -92,9 +91,11 @@ main{
     display: none;
 }
 
-
-
 .overlayPic{
+    text-align: center;
+}
+
+.zoomedPic{
     width: 450px;
     aspect-ratio: 1;
 }
